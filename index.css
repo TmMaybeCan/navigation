@@ -1,0 +1,189 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 280px;
+  min-height: 280px;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+  line-height: 1.2;
+  background: #ecf0f1;
+}
+.main-menu {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  background: #2980b9;
+  width: 200px;
+}
+
+.main-menu > li {
+  border-bottom: 2px solid #2c3e50;
+}
+
+.main-menu a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  width: 170px;
+  padding: 10px 15px;
+}
+
+.main-menu > .active > a {
+  background-color: #1abc9c;
+  border-bottom: 2px solid #2c3e50;
+}
+
+.main-menu ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.main-menu li li {
+  background-color: #fff;
+}
+
+.main-menu li li a {
+  color: #2980b9;
+  text-decoration: underline;
+  margin: 0px;
+  padding: 5px 0px 5px 15px;
+}
+
+.main-menu li li:first-child {
+  padding-top: 10px;
+}
+
+.main-menu li li:last-child {
+  padding-bottom: 10px;
+}
+
+/*Горизонтальное меню*/
+
+.example {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background: #2980b9;
+  width: 500px;
+}
+.example li {
+  display: inline-block;
+  padding: 10px 15px;
+  border-left: 2px solid #2c3e50;
+  margin-right: -5px;
+}
+.example a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+.example .octive {
+  background: #1abc9c;
+  margin-right: -5px;
+}
+
+/*Выпадающее подменю*/
+
+.rek {
+  width: 180px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.rek a {
+  display: block;
+  margin-bottom: -1px;
+  padding: 8px 14px;
+  text-decoration: none;
+  color: #0088cc;
+  border: 1px solid #e5e5e5;
+  background-color: lightyellow;
+}
+
+.rek a:hover {
+  background: #f5f5f5;
+}
+
+.rek > li {
+  position: relative;
+}
+
+.rek .sub-menu {
+  position: absolute;
+  top: 5px;
+  left: 170px;
+  z-index: 10;
+  width: 150px;
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #fcf8e3;
+}
+.rek > li:hover .sub-menu {
+  display: block;
+}
+
+/*Горизонтальное выпадающее подменю + opened*/
+
+.maind {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 1px solid #e5e5e5;
+}
+
+.maind > li {
+  position: relative;
+  display: inline-block;
+  margin-right: -4px;
+}
+
+.maind a {
+  display: block;
+  margin-left: -1px;
+  padding: 8px 10px;
+  color: #0088cc;
+  border-left: 1px solid #e5e5e5;
+}
+
+.maind a:hover {
+  background: #f5f5f5;
+}
+
+.maind .sub-mend {
+  position: absolute;
+  left: 1px;
+  display: none;
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #fcf8e3;
+}
+
+.maind .sub-mend a {
+  margin-bottom: -1px;
+  border: 1px solid #e5e5e5;
+}
+
+.maind > li:hover .sub-mend {
+  display: block;
+}
+
+.maind .opened .sub-mend {
+  display: block;
+}
+
+.maind > .opened > a {
+  color: #fff;
+  background: #0088cc;
+}
